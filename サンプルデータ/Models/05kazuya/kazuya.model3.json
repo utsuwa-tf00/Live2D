@@ -1,0 +1,147 @@
+{
+	"Version": 3,
+	"FileReferences": {
+		"Moc": "kazuya.moc3",
+		"Textures": [
+			"kazuya.2048/texture_00.png",
+			"kazuya.2048/texture_01.png"
+		],
+		"Physics": "kazuya.physics3.json",
+		"Pose": "kazuya.pose3.json",
+		"Expressions": [
+			{
+				"Name": "Angry.exp3.json",
+				"File": "expressions/Angry.exp3.json"
+			},
+			{
+				"Name": "Blushing.exp3.json",
+				"File": "expressions/Blushing.exp3.json"
+			},
+			{
+				"Name": "Hungry.exp3.json",
+				"File": "expressions/Hungry.exp3.json"
+			},
+			{
+				"Name": "Insane.exp3.json",
+				"File": "expressions/Insane.exp3.json"
+			},
+			{
+				"Name": "Normal.exp3.json",
+				"File": "expressions/Normal.exp3.json"
+			},
+			{
+				"Name": "Sad.exp3.json",
+				"File": "expressions/Sad.exp3.json"
+			},
+			{
+				"Name": "Scared.exp3.json",
+				"File": "expressions/Scared.exp3.json"
+			},
+			{
+				"Name": "Smile.exp3.json",
+				"File": "expressions/Smile.exp3.json"
+			},
+			{
+				"Name": "Smile2.exp3.json",
+				"File": "expressions/Smile2.exp3.json"
+			},
+			{
+				"Name": "Surprised.exp3.json",
+				"File": "expressions/Surprised.exp3.json"
+			},
+			{
+				"Name": "Tired.exp3.json",
+				"File": "expressions/Tired.exp3.json"
+			}
+		],
+		"Motions": {
+			"Idle": [
+				{
+					"File": "mtn/001_Idle.motion3.json"
+				}
+			],
+			"Tap@Head": [
+				{
+					"File": "mtn/002_Akimbo.motion3.json"
+				}
+			],
+			"Tap@UpBody": [
+				{
+					"File": "mtn/004_Surprised.motion3.json"
+				}
+			],
+			"Flick": [
+				{
+					"File": "mtn/003_Byebye.motion3.json"
+				}
+			],
+			"FlickUp": [
+				{
+					"File": "mtn/005_FlickUp.motion3.json"
+				}
+			]
+		}
+	},
+	"Groups": [
+		{
+			"Target": "Parameter",
+			"Name": "LipSync",
+			"Ids": []
+		},
+		{
+			"Target": "Parameter",
+			"Name": "EyeBlink",
+			"Ids": []
+		}
+	],
+	"HitAreas": [
+		{
+			"Id": "HitArea_Lowerbody",
+			"Name": "LowBody"
+		},
+		{
+			"Id": "HitArea_Upperbody",
+			"Name": "UpBody"
+		},
+		{
+			"Id": "HitArea_Head",
+			"Name": "Head"
+		},
+		{
+			"Id": "HitArea_Upperarm_L",
+			"Name": "UpperArmLA"
+		},
+		{
+			"Id": "HitArea_Upperarm_RB",
+			"Name": "UpperArmRB"
+		},
+		{
+			"Id": "HitArea_Forearm_RB",
+			"Name": "ForeArmB"
+		},
+		{
+			"Id": "HitArea_Hand_RB",
+			"Name": "HandRB"
+		},
+		{
+			"Id": "HitArea_Forearm_L",
+			"Name": "ForeArmLA"
+		},
+		{
+			"Id": "HitArea_Hand_L",
+			"Name": "HandLA"
+		},
+		{
+			"Id": "HitArea_Hand_RA",
+			"Name": "HandRA"
+		},
+		{
+			"Id": "HitArea_Forearm_RA",
+			"Name": "ForeArmR"
+		},
+		{
+			"Id": "HitArea_Upperarm_RA",
+			"Name": "UpperArmRA"
+		}
+	]
+}

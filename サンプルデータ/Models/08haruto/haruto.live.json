@@ -1,0 +1,2557 @@
+{
+    "major": 0,
+    "minor": 2,
+    "animation": {
+        "ptr_wrapper": {
+            "id": 2147483649,
+            "data": {
+                "cereal_class_version": 0,
+                "graphs": [
+                    {
+                        "ptr_wrapper": {
+                            "id": 2147483650,
+                            "data": {
+                                "cereal_class_version": 0,
+                                "nodes": [
+                                    {
+                                        "polymorphic_id": 2147483649,
+                                        "polymorphic_name": "SourceNode",
+                                        "ptr_wrapper": {
+                                            "id": 2147483651,
+                                            "data": {
+                                                "cereal_class_version": 0,
+                                                "base": {
+                                                    "cereal_class_version": 0,
+                                                    "id": 1051,
+                                                    "connections": []
+                                                },
+                                                "key": "Yaw"
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "polymorphic_id": 2147483650,
+                                        "polymorphic_name": "InvertEditableNode",
+                                        "ptr_wrapper": {
+                                            "id": 2147483652,
+                                            "data": {
+                                                "cereal_class_version": 0,
+                                                "base": {
+                                                    "id": 1052,
+                                                    "connections": [
+                                                        {
+                                                            "nodeId": 1051,
+                                                            "portIndex": 0
+                                                        }
+                                                    ]
+                                                },
+                                                "invert": 0.0
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "polymorphic_id": 2147483651,
+                                        "polymorphic_name": "ScaleNode",
+                                        "ptr_wrapper": {
+                                            "id": 2147483653,
+                                            "data": {
+                                                "cereal_class_version": 0,
+                                                "base": {
+                                                    "id": 1053,
+                                                    "connections": [
+                                                        {
+                                                            "nodeId": 1052,
+                                                            "portIndex": 0
+                                                        }
+                                                    ]
+                                                },
+                                                "scale": 1.0
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "polymorphic_id": 2147483652,
+                                        "polymorphic_name": "CurveNode",
+                                        "ptr_wrapper": {
+                                            "id": 2147483654,
+                                            "data": {
+                                                "cereal_class_version": 0,
+                                                "base": {
+                                                    "id": 1054,
+                                                    "connections": [
+                                                        {
+                                                            "nodeId": 1053,
+                                                            "portIndex": 0
+                                                        }
+                                                    ]
+                                                },
+                                                "items": [
+                                                    {
+                                                        "point": {
+                                                            "x": 0.0,
+                                                            "y": 0.0
+                                                        },
+                                                        "type": 1,
+                                                        "previousControl": {
+                                                            "nullopt": true
+                                                        },
+                                                        "nextControl": {
+                                                            "nullopt": false,
+                                                            "data": {
+                                                                "x": 0.30000001192092898,
+                                                                "y": 0.0
+                                                            }
+                                                        }
+                                                    },
+                                                    {
+                                                        "point": {
+                                                            "x": 1.0,
+                                                            "y": 1.0
+                                                        },
+                                                        "type": 0,
+                                                        "previousControl": {
+                                                            "nullopt": false,
+                                                            "data": {
+                                                                "x": 0.699999988079071,
+                                                                "y": 1.0
+                                                            }
+                                                        },
+                                                        "nextControl": {
+                                                            "nullopt": true
+                                                        }
+                                                    }
+                                                ],
+                                                "min": -30.0,
+                                                "max": 30.0
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "polymorphic_id": 2147483653,
+                                        "polymorphic_name": "WeightNode",
+                                        "ptr_wrapper": {
+                                            "id": 2147483655,
+                                            "data": {
+                                                "cereal_class_version": 0,
+                                                "base": {
+                                                    "id": 1055,
+                                                    "connections": [
+                                                        {
+                                                            "nodeId": 1054,
+                                                            "portIndex": 0
+                                                        }
+                                                    ]
+                                                },
+                                                "weight": 0.800000011920929,
+                                                "forceZero": false
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "polymorphic_id": 2147483654,
+                                        "polymorphic_name": "ResultNode",
+                                        "ptr_wrapper": {
+                                            "id": 2147483656,
+                                            "data": {
+                                                "cereal_class_version": 0,
+                                                "base": {
+                                                    "id": 1056,
+                                                    "connections": [
+                                                        {
+                                                            "nodeId": 1055,
+                                                            "portIndex": 0
+                                                        }
+                                                    ]
+                                                },
+                                                "key": "PARAM_ANGLE_X"
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    {
+                        "ptr_wrapper": {
+                            "id": 2147483657,
+                            "data": {
+                                "nodes": [
+                                    {
+                                        "polymorphic_id": 1,
+                                        "ptr_wrapper": {
+                                            "id": 2147483658,
+                                            "data": {
+                                                "base": {
+                                                    "id": 1057,
+                                                    "connections": []
+                                                },
+                                                "key": "Pitch"
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "polymorphic_id": 2,
+                                        "ptr_wrapper": {
+                                            "id": 2147483659,
+                                            "data": {
+                                                "base": {
+                                                    "id": 1058,
+                                                    "connections": [
+                                                        {
+                                                            "nodeId": 1057,
+                                                            "portIndex": 0
+                                                        }
+                                                    ]
+                                                },
+                                                "invert": 0.0
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "polymorphic_id": 3,
+                                        "ptr_wrapper": {
+                                            "id": 2147483660,
+                                            "data": {
+                                                "base": {
+                                                    "id": 1059,
+                                                    "connections": [
+                                                        {
+                                                            "nodeId": 1058,
+                                                            "portIndex": 0
+                                                        }
+                                                    ]
+                                                },
+                                                "scale": 0.5
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "polymorphic_id": 4,
+                                        "ptr_wrapper": {
+                                            "id": 2147483661,
+                                            "data": {
+                                                "base": {
+                                                    "id": 1060,
+                                                    "connections": [
+                                                        {
+                                                            "nodeId": 1059,
+                                                            "portIndex": 0
+                                                        }
+                                                    ]
+                                                },
+                                                "items": [
+                                                    {
+                                                        "point": {
+                                                            "x": 0.0,
+                                                            "y": 0.0
+                                                        },
+                                                        "type": 1,
+                                                        "previousControl": {
+                                                            "nullopt": true
+                                                        },
+                                                        "nextControl": {
+                                                            "nullopt": false,
+                                                            "data": {
+                                                                "x": 0.30000001192092898,
+                                                                "y": 0.0
+                                                            }
+                                                        }
+                                                    },
+                                                    {
+                                                        "point": {
+                                                            "x": 1.0,
+                                                            "y": 1.0
+                                                        },
+                                                        "type": 0,
+                                                        "previousControl": {
+                                                            "nullopt": false,
+                                                            "data": {
+                                                                "x": 0.699999988079071,
+                                                                "y": 1.0
+                                                            }
+                                                        },
+                                                        "nextControl": {
+                                                            "nullopt": true
+                                                        }
+                                                    }
+                                                ],
+                                                "min": -30.0,
+                                                "max": 30.0
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "polymorphic_id": 5,
+                                        "ptr_wrapper": {
+                                            "id": 2147483662,
+                                            "data": {
+                                                "base": {
+                                                    "id": 1061,
+                                                    "connections": [
+                                                        {
+                                                            "nodeId": 1060,
+                                                            "portIndex": 0
+                                                        }
+                                                    ]
+                                                },
+                                                "weight": 0.800000011920929,
+                                                "forceZero": false
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "polymorphic_id": 6,
+                                        "ptr_wrapper": {
+                                            "id": 2147483663,
+                                            "data": {
+                                                "base": {
+                                                    "id": 1062,
+                                                    "connections": [
+                                                        {
+                                                            "nodeId": 1061,
+                                                            "portIndex": 0
+                                                        }
+                                                    ]
+                                                },
+                                                "key": "PARAM_ANGLE_Y"
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    {
+                        "ptr_wrapper": {
+                            "id": 2147483664,
+                            "data": {
+                                "nodes": [
+                                    {
+                                        "polymorphic_id": 1,
+                                        "ptr_wrapper": {
+                                            "id": 2147483665,
+                                            "data": {
+                                                "base": {
+                                                    "id": 1063,
+                                                    "connections": []
+                                                },
+                                                "key": "Roll"
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "polymorphic_id": 2,
+                                        "ptr_wrapper": {
+                                            "id": 2147483666,
+                                            "data": {
+                                                "base": {
+                                                    "id": 1064,
+                                                    "connections": [
+                                                        {
+                                                            "nodeId": 1063,
+                                                            "portIndex": 0
+                                                        }
+                                                    ]
+                                                },
+                                                "invert": 0.0
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "polymorphic_id": 3,
+                                        "ptr_wrapper": {
+                                            "id": 2147483667,
+                                            "data": {
+                                                "base": {
+                                                    "id": 1065,
+                                                    "connections": [
+                                                        {
+                                                            "nodeId": 1064,
+                                                            "portIndex": 0
+                                                        }
+                                                    ]
+                                                },
+                                                "scale": 0.5
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "polymorphic_id": 4,
+                                        "ptr_wrapper": {
+                                            "id": 2147483668,
+                                            "data": {
+                                                "base": {
+                                                    "id": 1066,
+                                                    "connections": [
+                                                        {
+                                                            "nodeId": 1065,
+                                                            "portIndex": 0
+                                                        }
+                                                    ]
+                                                },
+                                                "items": [
+                                                    {
+                                                        "point": {
+                                                            "x": 0.0,
+                                                            "y": 0.0
+                                                        },
+                                                        "type": 1,
+                                                        "previousControl": {
+                                                            "nullopt": true
+                                                        },
+                                                        "nextControl": {
+                                                            "nullopt": false,
+                                                            "data": {
+                                                                "x": 0.30000001192092898,
+                                                                "y": 0.0
+                                                            }
+                                                        }
+                                                    },
+                                                    {
+                                                        "point": {
+                                                            "x": 1.0,
+                                                            "y": 1.0
+                                                        },
+                                                        "type": 0,
+                                                        "previousControl": {
+                                                            "nullopt": false,
+                                                            "data": {
+                                                                "x": 0.699999988079071,
+                                                                "y": 1.0
+                                                            }
+                                                        },
+                                                        "nextControl": {
+                                                            "nullopt": true
+                                                        }
+                                                    }
+                                                ],
+                                                "min": -30.0,
+                                                "max": 30.0
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "polymorphic_id": 5,
+                                        "ptr_wrapper": {
+                                            "id": 2147483669,
+                                            "data": {
+                                                "base": {
+                                                    "id": 1067,
+                                                    "connections": [
+                                                        {
+                                                            "nodeId": 1066,
+                                                            "portIndex": 0
+                                                        }
+                                                    ]
+                                                },
+                                                "weight": 0.800000011920929,
+                                                "forceZero": false
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "polymorphic_id": 6,
+                                        "ptr_wrapper": {
+                                            "id": 2147483670,
+                                            "data": {
+                                                "base": {
+                                                    "id": 1068,
+                                                    "connections": [
+                                                        {
+                                                            "nodeId": 1067,
+                                                            "portIndex": 0
+                                                        }
+                                                    ]
+                                                },
+                                                "key": "PARAM_ANGLE_Z"
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    {
+                        "ptr_wrapper": {
+                            "id": 2147483671,
+                            "data": {
+                                "nodes": [
+                                    {
+                                        "polymorphic_id": 1,
+                                        "ptr_wrapper": {
+                                            "id": 2147483672,
+                                            "data": {
+                                                "base": {
+                                                    "id": 1069,
+                                                    "connections": []
+                                                },
+                                                "key": "Yaw"
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "polymorphic_id": 2,
+                                        "ptr_wrapper": {
+                                            "id": 2147483673,
+                                            "data": {
+                                                "base": {
+                                                    "id": 1070,
+                                                    "connections": [
+                                                        {
+                                                            "nodeId": 1069,
+                                                            "portIndex": 0
+                                                        }
+                                                    ]
+                                                },
+                                                "invert": 0.0
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "polymorphic_id": 3,
+                                        "ptr_wrapper": {
+                                            "id": 2147483674,
+                                            "data": {
+                                                "base": {
+                                                    "id": 1071,
+                                                    "connections": [
+                                                        {
+                                                            "nodeId": 1070,
+                                                            "portIndex": 0
+                                                        }
+                                                    ]
+                                                },
+                                                "scale": 0.20000000298023225
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "polymorphic_id": 4,
+                                        "ptr_wrapper": {
+                                            "id": 2147483675,
+                                            "data": {
+                                                "base": {
+                                                    "id": 1072,
+                                                    "connections": [
+                                                        {
+                                                            "nodeId": 1071,
+                                                            "portIndex": 0
+                                                        }
+                                                    ]
+                                                },
+                                                "items": [
+                                                    {
+                                                        "point": {
+                                                            "x": 0.0,
+                                                            "y": 0.0
+                                                        },
+                                                        "type": 1,
+                                                        "previousControl": {
+                                                            "nullopt": true
+                                                        },
+                                                        "nextControl": {
+                                                            "nullopt": false,
+                                                            "data": {
+                                                                "x": 0.30000001192092898,
+                                                                "y": 0.0
+                                                            }
+                                                        }
+                                                    },
+                                                    {
+                                                        "point": {
+                                                            "x": 1.0,
+                                                            "y": 1.0
+                                                        },
+                                                        "type": 0,
+                                                        "previousControl": {
+                                                            "nullopt": false,
+                                                            "data": {
+                                                                "x": 0.699999988079071,
+                                                                "y": 1.0
+                                                            }
+                                                        },
+                                                        "nextControl": {
+                                                            "nullopt": true
+                                                        }
+                                                    }
+                                                ],
+                                                "min": -10.0,
+                                                "max": 10.0
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "polymorphic_id": 5,
+                                        "ptr_wrapper": {
+                                            "id": 2147483676,
+                                            "data": {
+                                                "base": {
+                                                    "id": 1073,
+                                                    "connections": [
+                                                        {
+                                                            "nodeId": 1072,
+                                                            "portIndex": 0
+                                                        }
+                                                    ]
+                                                },
+                                                "weight": 0.6000000238418579,
+                                                "forceZero": false
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "polymorphic_id": 6,
+                                        "ptr_wrapper": {
+                                            "id": 2147483677,
+                                            "data": {
+                                                "base": {
+                                                    "id": 1074,
+                                                    "connections": [
+                                                        {
+                                                            "nodeId": 1073,
+                                                            "portIndex": 0
+                                                        }
+                                                    ]
+                                                },
+                                                "key": "PARAM_BODY_ANGLE_X"
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    {
+                        "ptr_wrapper": {
+                            "id": 2147483678,
+                            "data": {
+                                "nodes": [
+                                    {
+                                        "polymorphic_id": 1,
+                                        "ptr_wrapper": {
+                                            "id": 2147483679,
+                                            "data": {
+                                                "base": {
+                                                    "id": 1075,
+                                                    "connections": []
+                                                },
+                                                "key": "Pitch"
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "polymorphic_id": 2,
+                                        "ptr_wrapper": {
+                                            "id": 2147483680,
+                                            "data": {
+                                                "base": {
+                                                    "id": 1076,
+                                                    "connections": [
+                                                        {
+                                                            "nodeId": 1075,
+                                                            "portIndex": 0
+                                                        }
+                                                    ]
+                                                },
+                                                "invert": 0.0
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "polymorphic_id": 3,
+                                        "ptr_wrapper": {
+                                            "id": 2147483681,
+                                            "data": {
+                                                "base": {
+                                                    "id": 1077,
+                                                    "connections": [
+                                                        {
+                                                            "nodeId": 1076,
+                                                            "portIndex": 0
+                                                        }
+                                                    ]
+                                                },
+                                                "scale": 0.5
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "polymorphic_id": 4,
+                                        "ptr_wrapper": {
+                                            "id": 2147483682,
+                                            "data": {
+                                                "base": {
+                                                    "id": 1078,
+                                                    "connections": [
+                                                        {
+                                                            "nodeId": 1077,
+                                                            "portIndex": 0
+                                                        }
+                                                    ]
+                                                },
+                                                "items": [
+                                                    {
+                                                        "point": {
+                                                            "x": 0.0,
+                                                            "y": 0.0
+                                                        },
+                                                        "type": 1,
+                                                        "previousControl": {
+                                                            "nullopt": true
+                                                        },
+                                                        "nextControl": {
+                                                            "nullopt": false,
+                                                            "data": {
+                                                                "x": 0.30000001192092898,
+                                                                "y": 0.0
+                                                            }
+                                                        }
+                                                    },
+                                                    {
+                                                        "point": {
+                                                            "x": 1.0,
+                                                            "y": 1.0
+                                                        },
+                                                        "type": 0,
+                                                        "previousControl": {
+                                                            "nullopt": false,
+                                                            "data": {
+                                                                "x": 0.699999988079071,
+                                                                "y": 1.0
+                                                            }
+                                                        },
+                                                        "nextControl": {
+                                                            "nullopt": true
+                                                        }
+                                                    }
+                                                ],
+                                                "min": -10.0,
+                                                "max": 10.0
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "polymorphic_id": 5,
+                                        "ptr_wrapper": {
+                                            "id": 2147483683,
+                                            "data": {
+                                                "base": {
+                                                    "id": 1079,
+                                                    "connections": [
+                                                        {
+                                                            "nodeId": 1078,
+                                                            "portIndex": 0
+                                                        }
+                                                    ]
+                                                },
+                                                "weight": 0.6000000238418579,
+                                                "forceZero": false
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "polymorphic_id": 6,
+                                        "ptr_wrapper": {
+                                            "id": 2147483684,
+                                            "data": {
+                                                "base": {
+                                                    "id": 1080,
+                                                    "connections": [
+                                                        {
+                                                            "nodeId": 1079,
+                                                            "portIndex": 0
+                                                        }
+                                                    ]
+                                                },
+                                                "key": "PARAM_BODY_ANGLE_Y"
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    {
+                        "ptr_wrapper": {
+                            "id": 2147483685,
+                            "data": {
+                                "nodes": [
+                                    {
+                                        "polymorphic_id": 1,
+                                        "ptr_wrapper": {
+                                            "id": 2147483686,
+                                            "data": {
+                                                "base": {
+                                                    "id": 1081,
+                                                    "connections": []
+                                                },
+                                                "key": "Roll"
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "polymorphic_id": 2,
+                                        "ptr_wrapper": {
+                                            "id": 2147483687,
+                                            "data": {
+                                                "base": {
+                                                    "id": 1082,
+                                                    "connections": [
+                                                        {
+                                                            "nodeId": 1081,
+                                                            "portIndex": 0
+                                                        }
+                                                    ]
+                                                },
+                                                "invert": 0.0
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "polymorphic_id": 3,
+                                        "ptr_wrapper": {
+                                            "id": 2147483688,
+                                            "data": {
+                                                "base": {
+                                                    "id": 1083,
+                                                    "connections": [
+                                                        {
+                                                            "nodeId": 1082,
+                                                            "portIndex": 0
+                                                        }
+                                                    ]
+                                                },
+                                                "scale": 0.20000000298023225
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "polymorphic_id": 4,
+                                        "ptr_wrapper": {
+                                            "id": 2147483689,
+                                            "data": {
+                                                "base": {
+                                                    "id": 1084,
+                                                    "connections": [
+                                                        {
+                                                            "nodeId": 1083,
+                                                            "portIndex": 0
+                                                        }
+                                                    ]
+                                                },
+                                                "items": [
+                                                    {
+                                                        "point": {
+                                                            "x": 0.0,
+                                                            "y": 0.0
+                                                        },
+                                                        "type": 1,
+                                                        "previousControl": {
+                                                            "nullopt": true
+                                                        },
+                                                        "nextControl": {
+                                                            "nullopt": false,
+                                                            "data": {
+                                                                "x": 0.30000001192092898,
+                                                                "y": 0.0
+                                                            }
+                                                        }
+                                                    },
+                                                    {
+                                                        "point": {
+                                                            "x": 1.0,
+                                                            "y": 1.0
+                                                        },
+                                                        "type": 0,
+                                                        "previousControl": {
+                                                            "nullopt": false,
+                                                            "data": {
+                                                                "x": 0.699999988079071,
+                                                                "y": 1.0
+                                                            }
+                                                        },
+                                                        "nextControl": {
+                                                            "nullopt": true
+                                                        }
+                                                    }
+                                                ],
+                                                "min": -10.0,
+                                                "max": 10.0
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "polymorphic_id": 5,
+                                        "ptr_wrapper": {
+                                            "id": 2147483690,
+                                            "data": {
+                                                "base": {
+                                                    "id": 1085,
+                                                    "connections": [
+                                                        {
+                                                            "nodeId": 1084,
+                                                            "portIndex": 0
+                                                        }
+                                                    ]
+                                                },
+                                                "weight": 0.6000000238418579,
+                                                "forceZero": false
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "polymorphic_id": 6,
+                                        "ptr_wrapper": {
+                                            "id": 2147483691,
+                                            "data": {
+                                                "base": {
+                                                    "id": 1086,
+                                                    "connections": [
+                                                        {
+                                                            "nodeId": 1085,
+                                                            "portIndex": 0
+                                                        }
+                                                    ]
+                                                },
+                                                "key": "PARAM_BODY_ANGLE_Z"
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    {
+                        "ptr_wrapper": {
+                            "id": 2147483692,
+                            "data": {
+                                "nodes": [
+                                    {
+                                        "polymorphic_id": 1,
+                                        "ptr_wrapper": {
+                                            "id": 2147483693,
+                                            "data": {
+                                                "base": {
+                                                    "id": 1087,
+                                                    "connections": []
+                                                },
+                                                "key": "BrowYRight"
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "polymorphic_id": 2,
+                                        "ptr_wrapper": {
+                                            "id": 2147483694,
+                                            "data": {
+                                                "base": {
+                                                    "id": 1088,
+                                                    "connections": [
+                                                        {
+                                                            "nodeId": 1087,
+                                                            "portIndex": 0
+                                                        }
+                                                    ]
+                                                },
+                                                "invert": 0.0
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "polymorphic_id": 3,
+                                        "ptr_wrapper": {
+                                            "id": 2147483695,
+                                            "data": {
+                                                "base": {
+                                                    "id": 1089,
+                                                    "connections": [
+                                                        {
+                                                            "nodeId": 1088,
+                                                            "portIndex": 0
+                                                        }
+                                                    ]
+                                                },
+                                                "scale": 1.0
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "polymorphic_id": 4,
+                                        "ptr_wrapper": {
+                                            "id": 2147483696,
+                                            "data": {
+                                                "base": {
+                                                    "id": 1090,
+                                                    "connections": [
+                                                        {
+                                                            "nodeId": 1089,
+                                                            "portIndex": 0
+                                                        }
+                                                    ]
+                                                },
+                                                "items": [
+                                                    {
+                                                        "point": {
+                                                            "x": 0.0,
+                                                            "y": 0.0
+                                                        },
+                                                        "type": 1,
+                                                        "previousControl": {
+                                                            "nullopt": true
+                                                        },
+                                                        "nextControl": {
+                                                            "nullopt": false,
+                                                            "data": {
+                                                                "x": 0.30000001192092898,
+                                                                "y": 0.0
+                                                            }
+                                                        }
+                                                    },
+                                                    {
+                                                        "point": {
+                                                            "x": 1.0,
+                                                            "y": 1.0
+                                                        },
+                                                        "type": 0,
+                                                        "previousControl": {
+                                                            "nullopt": false,
+                                                            "data": {
+                                                                "x": 0.699999988079071,
+                                                                "y": 1.0
+                                                            }
+                                                        },
+                                                        "nextControl": {
+                                                            "nullopt": true
+                                                        }
+                                                    }
+                                                ],
+                                                "min": -1.0,
+                                                "max": 1.0
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "polymorphic_id": 5,
+                                        "ptr_wrapper": {
+                                            "id": 2147483697,
+                                            "data": {
+                                                "base": {
+                                                    "id": 1091,
+                                                    "connections": [
+                                                        {
+                                                            "nodeId": 1090,
+                                                            "portIndex": 0
+                                                        }
+                                                    ]
+                                                },
+                                                "weight": 0.5,
+                                                "forceZero": false
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "polymorphic_id": 6,
+                                        "ptr_wrapper": {
+                                            "id": 2147483698,
+                                            "data": {
+                                                "base": {
+                                                    "id": 1092,
+                                                    "connections": [
+                                                        {
+                                                            "nodeId": 1091,
+                                                            "portIndex": 0
+                                                        }
+                                                    ]
+                                                },
+                                                "key": "PARAM_BROW_L_FORM"
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    {
+                        "ptr_wrapper": {
+                            "id": 2147483699,
+                            "data": {
+                                "nodes": [
+                                    {
+                                        "polymorphic_id": 1,
+                                        "ptr_wrapper": {
+                                            "id": 2147483700,
+                                            "data": {
+                                                "base": {
+                                                    "id": 1093,
+                                                    "connections": []
+                                                },
+                                                "key": "BrowYRight"
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "polymorphic_id": 2,
+                                        "ptr_wrapper": {
+                                            "id": 2147483701,
+                                            "data": {
+                                                "base": {
+                                                    "id": 1094,
+                                                    "connections": [
+                                                        {
+                                                            "nodeId": 1093,
+                                                            "portIndex": 0
+                                                        }
+                                                    ]
+                                                },
+                                                "invert": 0.0
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "polymorphic_id": 3,
+                                        "ptr_wrapper": {
+                                            "id": 2147483702,
+                                            "data": {
+                                                "base": {
+                                                    "id": 1095,
+                                                    "connections": [
+                                                        {
+                                                            "nodeId": 1094,
+                                                            "portIndex": 0
+                                                        }
+                                                    ]
+                                                },
+                                                "scale": 1.0
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "polymorphic_id": 4,
+                                        "ptr_wrapper": {
+                                            "id": 2147483703,
+                                            "data": {
+                                                "base": {
+                                                    "id": 1096,
+                                                    "connections": [
+                                                        {
+                                                            "nodeId": 1095,
+                                                            "portIndex": 0
+                                                        }
+                                                    ]
+                                                },
+                                                "items": [
+                                                    {
+                                                        "point": {
+                                                            "x": 0.0,
+                                                            "y": 0.0
+                                                        },
+                                                        "type": 1,
+                                                        "previousControl": {
+                                                            "nullopt": true
+                                                        },
+                                                        "nextControl": {
+                                                            "nullopt": false,
+                                                            "data": {
+                                                                "x": 0.30000001192092898,
+                                                                "y": 0.0
+                                                            }
+                                                        }
+                                                    },
+                                                    {
+                                                        "point": {
+                                                            "x": 1.0,
+                                                            "y": 1.0
+                                                        },
+                                                        "type": 0,
+                                                        "previousControl": {
+                                                            "nullopt": false,
+                                                            "data": {
+                                                                "x": 0.699999988079071,
+                                                                "y": 1.0
+                                                            }
+                                                        },
+                                                        "nextControl": {
+                                                            "nullopt": true
+                                                        }
+                                                    }
+                                                ],
+                                                "min": -1.0,
+                                                "max": 1.0
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "polymorphic_id": 5,
+                                        "ptr_wrapper": {
+                                            "id": 2147483704,
+                                            "data": {
+                                                "base": {
+                                                    "id": 1097,
+                                                    "connections": [
+                                                        {
+                                                            "nodeId": 1096,
+                                                            "portIndex": 0
+                                                        }
+                                                    ]
+                                                },
+                                                "weight": 0.5,
+                                                "forceZero": false
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "polymorphic_id": 6,
+                                        "ptr_wrapper": {
+                                            "id": 2147483705,
+                                            "data": {
+                                                "base": {
+                                                    "id": 1098,
+                                                    "connections": [
+                                                        {
+                                                            "nodeId": 1097,
+                                                            "portIndex": 0
+                                                        }
+                                                    ]
+                                                },
+                                                "key": "PARAM_BROW_R_FORM"
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    {
+                        "ptr_wrapper": {
+                            "id": 2147483706,
+                            "data": {
+                                "nodes": [
+                                    {
+                                        "polymorphic_id": 1,
+                                        "ptr_wrapper": {
+                                            "id": 2147483707,
+                                            "data": {
+                                                "base": {
+                                                    "id": 1099,
+                                                    "connections": []
+                                                },
+                                                "key": "EyeOpenLeft"
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "polymorphic_id": 2,
+                                        "ptr_wrapper": {
+                                            "id": 2147483708,
+                                            "data": {
+                                                "base": {
+                                                    "id": 1100,
+                                                    "connections": [
+                                                        {
+                                                            "nodeId": 1099,
+                                                            "portIndex": 0
+                                                        }
+                                                    ]
+                                                },
+                                                "invert": 0.0
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "polymorphic_id": 3,
+                                        "ptr_wrapper": {
+                                            "id": 2147483709,
+                                            "data": {
+                                                "base": {
+                                                    "id": 1101,
+                                                    "connections": [
+                                                        {
+                                                            "nodeId": 1100,
+                                                            "portIndex": 0
+                                                        }
+                                                    ]
+                                                },
+                                                "scale": 1.0
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "polymorphic_id": 4,
+                                        "ptr_wrapper": {
+                                            "id": 2147483710,
+                                            "data": {
+                                                "base": {
+                                                    "id": 1102,
+                                                    "connections": [
+                                                        {
+                                                            "nodeId": 1101,
+                                                            "portIndex": 0
+                                                        }
+                                                    ]
+                                                },
+                                                "items": [
+                                                    {
+                                                        "point": {
+                                                            "x": 0.0,
+                                                            "y": 0.0
+                                                        },
+                                                        "type": 1,
+                                                        "previousControl": {
+                                                            "nullopt": true
+                                                        },
+                                                        "nextControl": {
+                                                            "nullopt": false,
+                                                            "data": {
+                                                                "x": 0.30000001192092898,
+                                                                "y": 0.0
+                                                            }
+                                                        }
+                                                    },
+                                                    {
+                                                        "point": {
+                                                            "x": 1.0,
+                                                            "y": 1.0
+                                                        },
+                                                        "type": 0,
+                                                        "previousControl": {
+                                                            "nullopt": false,
+                                                            "data": {
+                                                                "x": 0.699999988079071,
+                                                                "y": 1.0
+                                                            }
+                                                        },
+                                                        "nextControl": {
+                                                            "nullopt": true
+                                                        }
+                                                    }
+                                                ],
+                                                "min": 0.0,
+                                                "max": 1.0
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "polymorphic_id": 5,
+                                        "ptr_wrapper": {
+                                            "id": 2147483711,
+                                            "data": {
+                                                "base": {
+                                                    "id": 1103,
+                                                    "connections": [
+                                                        {
+                                                            "nodeId": 1102,
+                                                            "portIndex": 0
+                                                        }
+                                                    ]
+                                                },
+                                                "weight": 0.5,
+                                                "forceZero": true
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "polymorphic_id": 6,
+                                        "ptr_wrapper": {
+                                            "id": 2147483712,
+                                            "data": {
+                                                "base": {
+                                                    "id": 1104,
+                                                    "connections": [
+                                                        {
+                                                            "nodeId": 1103,
+                                                            "portIndex": 0
+                                                        }
+                                                    ]
+                                                },
+                                                "key": "PARAM_EYE_L_OPEN"
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    {
+                        "ptr_wrapper": {
+                            "id": 2147483713,
+                            "data": {
+                                "nodes": [
+                                    {
+                                        "polymorphic_id": 1,
+                                        "ptr_wrapper": {
+                                            "id": 2147483714,
+                                            "data": {
+                                                "base": {
+                                                    "id": 1105,
+                                                    "connections": []
+                                                },
+                                                "key": "EyeOpenRight"
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "polymorphic_id": 2,
+                                        "ptr_wrapper": {
+                                            "id": 2147483715,
+                                            "data": {
+                                                "base": {
+                                                    "id": 1106,
+                                                    "connections": [
+                                                        {
+                                                            "nodeId": 1105,
+                                                            "portIndex": 0
+                                                        }
+                                                    ]
+                                                },
+                                                "invert": 0.0
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "polymorphic_id": 3,
+                                        "ptr_wrapper": {
+                                            "id": 2147483716,
+                                            "data": {
+                                                "base": {
+                                                    "id": 1107,
+                                                    "connections": [
+                                                        {
+                                                            "nodeId": 1106,
+                                                            "portIndex": 0
+                                                        }
+                                                    ]
+                                                },
+                                                "scale": 1.0
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "polymorphic_id": 4,
+                                        "ptr_wrapper": {
+                                            "id": 2147483717,
+                                            "data": {
+                                                "base": {
+                                                    "id": 1108,
+                                                    "connections": [
+                                                        {
+                                                            "nodeId": 1107,
+                                                            "portIndex": 0
+                                                        }
+                                                    ]
+                                                },
+                                                "items": [
+                                                    {
+                                                        "point": {
+                                                            "x": 0.0,
+                                                            "y": 0.0
+                                                        },
+                                                        "type": 1,
+                                                        "previousControl": {
+                                                            "nullopt": true
+                                                        },
+                                                        "nextControl": {
+                                                            "nullopt": false,
+                                                            "data": {
+                                                                "x": 0.30000001192092898,
+                                                                "y": 0.0
+                                                            }
+                                                        }
+                                                    },
+                                                    {
+                                                        "point": {
+                                                            "x": 1.0,
+                                                            "y": 1.0
+                                                        },
+                                                        "type": 0,
+                                                        "previousControl": {
+                                                            "nullopt": false,
+                                                            "data": {
+                                                                "x": 0.699999988079071,
+                                                                "y": 1.0
+                                                            }
+                                                        },
+                                                        "nextControl": {
+                                                            "nullopt": true
+                                                        }
+                                                    }
+                                                ],
+                                                "min": 0.0,
+                                                "max": 1.0
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "polymorphic_id": 5,
+                                        "ptr_wrapper": {
+                                            "id": 2147483718,
+                                            "data": {
+                                                "base": {
+                                                    "id": 1109,
+                                                    "connections": [
+                                                        {
+                                                            "nodeId": 1108,
+                                                            "portIndex": 0
+                                                        }
+                                                    ]
+                                                },
+                                                "weight": 0.5,
+                                                "forceZero": true
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "polymorphic_id": 6,
+                                        "ptr_wrapper": {
+                                            "id": 2147483719,
+                                            "data": {
+                                                "base": {
+                                                    "id": 1110,
+                                                    "connections": [
+                                                        {
+                                                            "nodeId": 1109,
+                                                            "portIndex": 0
+                                                        }
+                                                    ]
+                                                },
+                                                "key": "PARAM_EYE_R_OPEN"
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    {
+                        "ptr_wrapper": {
+                            "id": 2147483720,
+                            "data": {
+                                "nodes": [
+                                    {
+                                        "polymorphic_id": 1,
+                                        "ptr_wrapper": {
+                                            "id": 2147483721,
+                                            "data": {
+                                                "base": {
+                                                    "id": 1111,
+                                                    "connections": []
+                                                },
+                                                "key": "EyeLookX"
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "polymorphic_id": 2,
+                                        "ptr_wrapper": {
+                                            "id": 2147483722,
+                                            "data": {
+                                                "base": {
+                                                    "id": 1112,
+                                                    "connections": [
+                                                        {
+                                                            "nodeId": 1111,
+                                                            "portIndex": 0
+                                                        }
+                                                    ]
+                                                },
+                                                "invert": 0.0
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "polymorphic_id": 3,
+                                        "ptr_wrapper": {
+                                            "id": 2147483723,
+                                            "data": {
+                                                "base": {
+                                                    "id": 1113,
+                                                    "connections": [
+                                                        {
+                                                            "nodeId": 1112,
+                                                            "portIndex": 0
+                                                        }
+                                                    ]
+                                                },
+                                                "scale": 1.5
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "polymorphic_id": 4,
+                                        "ptr_wrapper": {
+                                            "id": 2147483724,
+                                            "data": {
+                                                "base": {
+                                                    "id": 1114,
+                                                    "connections": [
+                                                        {
+                                                            "nodeId": 1113,
+                                                            "portIndex": 0
+                                                        }
+                                                    ]
+                                                },
+                                                "items": [
+                                                    {
+                                                        "point": {
+                                                            "x": 0.0,
+                                                            "y": 0.0
+                                                        },
+                                                        "type": 1,
+                                                        "previousControl": {
+                                                            "nullopt": true
+                                                        },
+                                                        "nextControl": {
+                                                            "nullopt": false,
+                                                            "data": {
+                                                                "x": 0.30000001192092898,
+                                                                "y": 0.0
+                                                            }
+                                                        }
+                                                    },
+                                                    {
+                                                        "point": {
+                                                            "x": 1.0,
+                                                            "y": 1.0
+                                                        },
+                                                        "type": 0,
+                                                        "previousControl": {
+                                                            "nullopt": false,
+                                                            "data": {
+                                                                "x": 0.699999988079071,
+                                                                "y": 1.0
+                                                            }
+                                                        },
+                                                        "nextControl": {
+                                                            "nullopt": true
+                                                        }
+                                                    }
+                                                ],
+                                                "min": -1.0,
+                                                "max": 1.0
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "polymorphic_id": 5,
+                                        "ptr_wrapper": {
+                                            "id": 2147483725,
+                                            "data": {
+                                                "base": {
+                                                    "id": 1115,
+                                                    "connections": [
+                                                        {
+                                                            "nodeId": 1114,
+                                                            "portIndex": 0
+                                                        }
+                                                    ]
+                                                },
+                                                "weight": 0.5,
+                                                "forceZero": false
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "polymorphic_id": 6,
+                                        "ptr_wrapper": {
+                                            "id": 2147483726,
+                                            "data": {
+                                                "base": {
+                                                    "id": 1116,
+                                                    "connections": [
+                                                        {
+                                                            "nodeId": 1115,
+                                                            "portIndex": 0
+                                                        }
+                                                    ]
+                                                },
+                                                "key": "PARAM_EYE_BALL_X"
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    {
+                        "ptr_wrapper": {
+                            "id": 2147483727,
+                            "data": {
+                                "nodes": [
+                                    {
+                                        "polymorphic_id": 1,
+                                        "ptr_wrapper": {
+                                            "id": 2147483728,
+                                            "data": {
+                                                "base": {
+                                                    "id": 1117,
+                                                    "connections": []
+                                                },
+                                                "key": "EyeLookY"
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "polymorphic_id": 2,
+                                        "ptr_wrapper": {
+                                            "id": 2147483729,
+                                            "data": {
+                                                "base": {
+                                                    "id": 1118,
+                                                    "connections": [
+                                                        {
+                                                            "nodeId": 1117,
+                                                            "portIndex": 0
+                                                        }
+                                                    ]
+                                                },
+                                                "invert": 0.0
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "polymorphic_id": 3,
+                                        "ptr_wrapper": {
+                                            "id": 2147483730,
+                                            "data": {
+                                                "base": {
+                                                    "id": 1119,
+                                                    "connections": [
+                                                        {
+                                                            "nodeId": 1118,
+                                                            "portIndex": 0
+                                                        }
+                                                    ]
+                                                },
+                                                "scale": 1.5
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "polymorphic_id": 4,
+                                        "ptr_wrapper": {
+                                            "id": 2147483731,
+                                            "data": {
+                                                "base": {
+                                                    "id": 1120,
+                                                    "connections": [
+                                                        {
+                                                            "nodeId": 1119,
+                                                            "portIndex": 0
+                                                        }
+                                                    ]
+                                                },
+                                                "items": [
+                                                    {
+                                                        "point": {
+                                                            "x": 0.0,
+                                                            "y": 0.0
+                                                        },
+                                                        "type": 1,
+                                                        "previousControl": {
+                                                            "nullopt": true
+                                                        },
+                                                        "nextControl": {
+                                                            "nullopt": false,
+                                                            "data": {
+                                                                "x": 0.30000001192092898,
+                                                                "y": 0.0
+                                                            }
+                                                        }
+                                                    },
+                                                    {
+                                                        "point": {
+                                                            "x": 1.0,
+                                                            "y": 1.0
+                                                        },
+                                                        "type": 0,
+                                                        "previousControl": {
+                                                            "nullopt": false,
+                                                            "data": {
+                                                                "x": 0.699999988079071,
+                                                                "y": 1.0
+                                                            }
+                                                        },
+                                                        "nextControl": {
+                                                            "nullopt": true
+                                                        }
+                                                    }
+                                                ],
+                                                "min": -1.0,
+                                                "max": 1.0
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "polymorphic_id": 5,
+                                        "ptr_wrapper": {
+                                            "id": 2147483732,
+                                            "data": {
+                                                "base": {
+                                                    "id": 1121,
+                                                    "connections": [
+                                                        {
+                                                            "nodeId": 1120,
+                                                            "portIndex": 0
+                                                        }
+                                                    ]
+                                                },
+                                                "weight": 0.5,
+                                                "forceZero": false
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "polymorphic_id": 6,
+                                        "ptr_wrapper": {
+                                            "id": 2147483733,
+                                            "data": {
+                                                "base": {
+                                                    "id": 1122,
+                                                    "connections": [
+                                                        {
+                                                            "nodeId": 1121,
+                                                            "portIndex": 0
+                                                        }
+                                                    ]
+                                                },
+                                                "key": "PARAM_EYE_BALL_Y"
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    {
+                        "ptr_wrapper": {
+                            "id": 2147483734,
+                            "data": {
+                                "nodes": [
+                                    {
+                                        "polymorphic_id": 1,
+                                        "ptr_wrapper": {
+                                            "id": 2147483735,
+                                            "data": {
+                                                "base": {
+                                                    "id": 1123,
+                                                    "connections": []
+                                                },
+                                                "key": "MouthOpen"
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "polymorphic_id": 2,
+                                        "ptr_wrapper": {
+                                            "id": 2147483736,
+                                            "data": {
+                                                "base": {
+                                                    "id": 1124,
+                                                    "connections": [
+                                                        {
+                                                            "nodeId": 1123,
+                                                            "portIndex": 0
+                                                        }
+                                                    ]
+                                                },
+                                                "invert": 0.0
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "polymorphic_id": 3,
+                                        "ptr_wrapper": {
+                                            "id": 2147483737,
+                                            "data": {
+                                                "base": {
+                                                    "id": 1125,
+                                                    "connections": [
+                                                        {
+                                                            "nodeId": 1124,
+                                                            "portIndex": 0
+                                                        }
+                                                    ]
+                                                },
+                                                "scale": 1.0
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "polymorphic_id": 4,
+                                        "ptr_wrapper": {
+                                            "id": 2147483738,
+                                            "data": {
+                                                "base": {
+                                                    "id": 1126,
+                                                    "connections": [
+                                                        {
+                                                            "nodeId": 1125,
+                                                            "portIndex": 0
+                                                        }
+                                                    ]
+                                                },
+                                                "items": [
+                                                    {
+                                                        "point": {
+                                                            "x": 0.0,
+                                                            "y": 0.0
+                                                        },
+                                                        "type": 1,
+                                                        "previousControl": {
+                                                            "nullopt": true
+                                                        },
+                                                        "nextControl": {
+                                                            "nullopt": false,
+                                                            "data": {
+                                                                "x": 0.30000001192092898,
+                                                                "y": 0.0
+                                                            }
+                                                        }
+                                                    },
+                                                    {
+                                                        "point": {
+                                                            "x": 1.0,
+                                                            "y": 1.0
+                                                        },
+                                                        "type": 0,
+                                                        "previousControl": {
+                                                            "nullopt": false,
+                                                            "data": {
+                                                                "x": 0.699999988079071,
+                                                                "y": 1.0
+                                                            }
+                                                        },
+                                                        "nextControl": {
+                                                            "nullopt": true
+                                                        }
+                                                    }
+                                                ],
+                                                "min": 0.0,
+                                                "max": 1.0
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "polymorphic_id": 5,
+                                        "ptr_wrapper": {
+                                            "id": 2147483739,
+                                            "data": {
+                                                "base": {
+                                                    "id": 1127,
+                                                    "connections": [
+                                                        {
+                                                            "nodeId": 1126,
+                                                            "portIndex": 0
+                                                        }
+                                                    ]
+                                                },
+                                                "weight": 0.699999988079071,
+                                                "forceZero": true
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "polymorphic_id": 6,
+                                        "ptr_wrapper": {
+                                            "id": 2147483740,
+                                            "data": {
+                                                "base": {
+                                                    "id": 1128,
+                                                    "connections": [
+                                                        {
+                                                            "nodeId": 1127,
+                                                            "portIndex": 0
+                                                        }
+                                                    ]
+                                                },
+                                                "key": "PARAM_MOUTH_OPEN_Y"
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    {
+                        "ptr_wrapper": {
+                            "id": 2147483741,
+                            "data": {
+                                "nodes": [
+                                    {
+                                        "polymorphic_id": 1,
+                                        "ptr_wrapper": {
+                                            "id": 2147483742,
+                                            "data": {
+                                                "base": {
+                                                    "id": 1129,
+                                                    "connections": []
+                                                },
+                                                "key": "MouthSpread"
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "polymorphic_id": 2,
+                                        "ptr_wrapper": {
+                                            "id": 2147483743,
+                                            "data": {
+                                                "base": {
+                                                    "id": 1130,
+                                                    "connections": [
+                                                        {
+                                                            "nodeId": 1129,
+                                                            "portIndex": 0
+                                                        }
+                                                    ]
+                                                },
+                                                "invert": 0.0
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "polymorphic_id": 3,
+                                        "ptr_wrapper": {
+                                            "id": 2147483744,
+                                            "data": {
+                                                "base": {
+                                                    "id": 1131,
+                                                    "connections": [
+                                                        {
+                                                            "nodeId": 1130,
+                                                            "portIndex": 0
+                                                        }
+                                                    ]
+                                                },
+                                                "scale": 1.5
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "polymorphic_id": 4,
+                                        "ptr_wrapper": {
+                                            "id": 2147483745,
+                                            "data": {
+                                                "base": {
+                                                    "id": 1132,
+                                                    "connections": [
+                                                        {
+                                                            "nodeId": 1131,
+                                                            "portIndex": 0
+                                                        }
+                                                    ]
+                                                },
+                                                "items": [
+                                                    {
+                                                        "point": {
+                                                            "x": 0.0,
+                                                            "y": 0.0
+                                                        },
+                                                        "type": 1,
+                                                        "previousControl": {
+                                                            "nullopt": true
+                                                        },
+                                                        "nextControl": {
+                                                            "nullopt": false,
+                                                            "data": {
+                                                                "x": 0.30000001192092898,
+                                                                "y": 0.0
+                                                            }
+                                                        }
+                                                    },
+                                                    {
+                                                        "point": {
+                                                            "x": 1.0,
+                                                            "y": 1.0
+                                                        },
+                                                        "type": 0,
+                                                        "previousControl": {
+                                                            "nullopt": false,
+                                                            "data": {
+                                                                "x": 0.699999988079071,
+                                                                "y": 1.0
+                                                            }
+                                                        },
+                                                        "nextControl": {
+                                                            "nullopt": true
+                                                        }
+                                                    }
+                                                ],
+                                                "min": -1.0,
+                                                "max": 1.0
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "polymorphic_id": 5,
+                                        "ptr_wrapper": {
+                                            "id": 2147483746,
+                                            "data": {
+                                                "base": {
+                                                    "id": 1133,
+                                                    "connections": [
+                                                        {
+                                                            "nodeId": 1132,
+                                                            "portIndex": 0
+                                                        }
+                                                    ]
+                                                },
+                                                "weight": 0.800000011920929,
+                                                "forceZero": false
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "polymorphic_id": 6,
+                                        "ptr_wrapper": {
+                                            "id": 2147483747,
+                                            "data": {
+                                                "base": {
+                                                    "id": 1134,
+                                                    "connections": [
+                                                        {
+                                                            "nodeId": 1133,
+                                                            "portIndex": 0
+                                                        }
+                                                    ]
+                                                },
+                                                "key": "PARAM_MOUTH_FORM"
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    {
+                        "ptr_wrapper": {
+                            "id": 2147483748,
+                            "data": {
+                                "nodes": [
+                                    {
+                                        "polymorphic_id": 1,
+                                        "ptr_wrapper": {
+                                            "id": 2147483749,
+                                            "data": {
+                                                "base": {
+                                                    "id": 1135,
+                                                    "connections": []
+                                                },
+                                                "key": "Auto"
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "polymorphic_id": 2147483655,
+                                        "polymorphic_name": "WaveNode",
+                                        "ptr_wrapper": {
+                                            "id": 2147483750,
+                                            "data": {
+                                                "cereal_class_version": 0,
+                                                "base": {
+                                                    "id": 1136,
+                                                    "connections": [
+                                                        {
+                                                            "nodeId": 1135,
+                                                            "portIndex": 0
+                                                        }
+                                                    ]
+                                                },
+                                                "offset": 0.5,
+                                                "peak": 0.5,
+                                                "cycle": {
+                                                    "count": 3245
+                                                },
+                                                "type": 1
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "polymorphic_id": 2147483656,
+                                        "polymorphic_name": "RangeNode",
+                                        "ptr_wrapper": {
+                                            "id": 2147483751,
+                                            "data": {
+                                                "cereal_class_version": 0,
+                                                "base": {
+                                                    "id": 1137,
+                                                    "connections": [
+                                                        {
+                                                            "nodeId": 1136,
+                                                            "portIndex": 0
+                                                        }
+                                                    ]
+                                                },
+                                                "upperFrom": 1.0,
+                                                "lowerFrom": 0.0,
+                                                "upperTo": 1.0,
+                                                "lowerTo": 0.0,
+                                                "lowerTo": 0.0
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "polymorphic_id": 5,
+                                        "ptr_wrapper": {
+                                            "id": 2147483752,
+                                            "data": {
+                                                "base": {
+                                                    "id": 1138,
+                                                    "connections": [
+                                                        {
+                                                            "nodeId": 1137,
+                                                            "portIndex": 0
+                                                        }
+                                                    ]
+                                                },
+                                                "weight": 0.5,
+                                                "forceZero": false
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "polymorphic_id": 6,
+                                        "ptr_wrapper": {
+                                            "id": 2147483753,
+                                            "data": {
+                                                "base": {
+                                                    "id": 1139,
+                                                    "connections": [
+                                                        {
+                                                            "nodeId": 1138,
+                                                            "portIndex": 0
+                                                        }
+                                                    ]
+                                                },
+                                                "key": "PARAM_BREATH"
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    {
+                        "ptr_wrapper": {
+                            "id": 2147483754,
+                            "data": {
+                                "nodes": [
+                                    {
+                                        "polymorphic_id": 1,
+                                        "ptr_wrapper": {
+                                            "id": 2147483755,
+                                            "data": {
+                                                "base": {
+                                                    "id": 1140,
+                                                    "connections": []
+                                                },
+                                                "key": "MouthSpread"
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "polymorphic_id": 2,
+                                        "ptr_wrapper": {
+                                            "id": 2147483756,
+                                            "data": {
+                                                "base": {
+                                                    "id": 1141,
+                                                    "connections": [
+                                                        {
+                                                            "nodeId": 1140,
+                                                            "portIndex": 0
+                                                        }
+                                                    ]
+                                                },
+                                                "invert": 0.0
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "polymorphic_id": 3,
+                                        "ptr_wrapper": {
+                                            "id": 2147483757,
+                                            "data": {
+                                                "base": {
+                                                    "id": 1142,
+                                                    "connections": [
+                                                        {
+                                                            "nodeId": 1141,
+                                                            "portIndex": 0
+                                                        }
+                                                    ]
+                                                },
+                                                "scale": 1.5
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "polymorphic_id": 4,
+                                        "ptr_wrapper": {
+                                            "id": 2147483758,
+                                            "data": {
+                                                "base": {
+                                                    "id": 1143,
+                                                    "connections": [
+                                                        {
+                                                            "nodeId": 1142,
+                                                            "portIndex": 0
+                                                        }
+                                                    ]
+                                                },
+                                                "items": [
+                                                    {
+                                                        "point": {
+                                                            "x": 0.0,
+                                                            "y": 0.0
+                                                        },
+                                                        "type": 1,
+                                                        "previousControl": {
+                                                            "nullopt": true
+                                                        },
+                                                        "nextControl": {
+                                                            "nullopt": false,
+                                                            "data": {
+                                                                "x": 0.30000001192092898,
+                                                                "y": 0.0
+                                                            }
+                                                        }
+                                                    },
+                                                    {
+                                                        "point": {
+                                                            "x": 1.0,
+                                                            "y": 1.0
+                                                        },
+                                                        "type": 0,
+                                                        "previousControl": {
+                                                            "nullopt": false,
+                                                            "data": {
+                                                                "x": 0.699999988079071,
+                                                                "y": 1.0
+                                                            }
+                                                        },
+                                                        "nextControl": {
+                                                            "nullopt": true
+                                                        }
+                                                    }
+                                                ],
+                                                "min": 0.0,
+                                                "max": 1.0
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "polymorphic_id": 5,
+                                        "ptr_wrapper": {
+                                            "id": 2147483759,
+                                            "data": {
+                                                "base": {
+                                                    "id": 1144,
+                                                    "connections": [
+                                                        {
+                                                            "nodeId": 1143,
+                                                            "portIndex": 0
+                                                        }
+                                                    ]
+                                                },
+                                                "weight": 0.800000011920929,
+                                                "forceZero": false
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "polymorphic_id": 6,
+                                        "ptr_wrapper": {
+                                            "id": 2147483760,
+                                            "data": {
+                                                "base": {
+                                                    "id": 1145,
+                                                    "connections": [
+                                                        {
+                                                            "nodeId": 1144,
+                                                            "portIndex": 0
+                                                        }
+                                                    ]
+                                                },
+                                                "key": "PARAM_EYE_L_SMILE"
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    {
+                        "ptr_wrapper": {
+                            "id": 2147483761,
+                            "data": {
+                                "nodes": [
+                                    {
+                                        "polymorphic_id": 1,
+                                        "ptr_wrapper": {
+                                            "id": 2147483762,
+                                            "data": {
+                                                "base": {
+                                                    "id": 1146,
+                                                    "connections": []
+                                                },
+                                                "key": "MouthSpread"
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "polymorphic_id": 2,
+                                        "ptr_wrapper": {
+                                            "id": 2147483763,
+                                            "data": {
+                                                "base": {
+                                                    "id": 1147,
+                                                    "connections": [
+                                                        {
+                                                            "nodeId": 1146,
+                                                            "portIndex": 0
+                                                        }
+                                                    ]
+                                                },
+                                                "invert": 0.0
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "polymorphic_id": 3,
+                                        "ptr_wrapper": {
+                                            "id": 2147483764,
+                                            "data": {
+                                                "base": {
+                                                    "id": 1148,
+                                                    "connections": [
+                                                        {
+                                                            "nodeId": 1147,
+                                                            "portIndex": 0
+                                                        }
+                                                    ]
+                                                },
+                                                "scale": 1.5
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "polymorphic_id": 4,
+                                        "ptr_wrapper": {
+                                            "id": 2147483765,
+                                            "data": {
+                                                "base": {
+                                                    "id": 1149,
+                                                    "connections": [
+                                                        {
+                                                            "nodeId": 1148,
+                                                            "portIndex": 0
+                                                        }
+                                                    ]
+                                                },
+                                                "items": [
+                                                    {
+                                                        "point": {
+                                                            "x": 0.0,
+                                                            "y": 0.0
+                                                        },
+                                                        "type": 1,
+                                                        "previousControl": {
+                                                            "nullopt": true
+                                                        },
+                                                        "nextControl": {
+                                                            "nullopt": false,
+                                                            "data": {
+                                                                "x": 0.30000001192092898,
+                                                                "y": 0.0
+                                                            }
+                                                        }
+                                                    },
+                                                    {
+                                                        "point": {
+                                                            "x": 1.0,
+                                                            "y": 1.0
+                                                        },
+                                                        "type": 0,
+                                                        "previousControl": {
+                                                            "nullopt": false,
+                                                            "data": {
+                                                                "x": 0.699999988079071,
+                                                                "y": 1.0
+                                                            }
+                                                        },
+                                                        "nextControl": {
+                                                            "nullopt": true
+                                                        }
+                                                    }
+                                                ],
+                                                "min": 0.0,
+                                                "max": 1.0
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "polymorphic_id": 5,
+                                        "ptr_wrapper": {
+                                            "id": 2147483766,
+                                            "data": {
+                                                "base": {
+                                                    "id": 1150,
+                                                    "connections": [
+                                                        {
+                                                            "nodeId": 1149,
+                                                            "portIndex": 0
+                                                        }
+                                                    ]
+                                                },
+                                                "weight": 0.800000011920929,
+                                                "forceZero": false
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "polymorphic_id": 6,
+                                        "ptr_wrapper": {
+                                            "id": 2147483767,
+                                            "data": {
+                                                "base": {
+                                                    "id": 1151,
+                                                    "connections": [
+                                                        {
+                                                            "nodeId": 1150,
+                                                            "portIndex": 0
+                                                        }
+                                                    ]
+                                                },
+                                                "key": "PARAM_EYE_R_SMILE"
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "adjuster": {
+        "cereal_class_version": 0,
+        "items": []
+    },
+    "model": {
+        "cereal_class_version": 0,
+        "name": "はると",
+        "description": "SDキャラクターのモデルです。\n\nSNSへの投稿や動画配信に使用することができます。\n「nizima LIVEソフトウェア使用許諾契約書」および「nizima LIVEサンプルモデル利用条件」の詳細をご確認の上、ご使用ください。",
+        "icon": ""
+    },
+    "motions": [],
+    "expressions": [],
+    "physics": {
+        "cereal_class_version": 0,
+        "values": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+        ]
+    }
+}

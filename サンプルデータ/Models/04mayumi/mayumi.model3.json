@@ -1,0 +1,29 @@
+{
+	"Version": 3,
+	"FileReferences": {
+		"Moc": "mayumi.moc3",
+		"Textures": [
+			"mayumi.4096/texture_00.png",
+			"mayumi.4096/texture_01.png"
+		],
+		"Physics": "mayumi.physics3.json",
+		"DisplayInfo": "mayumi.cdi3.json"
+	},
+	"Groups": [
+		{
+			"Target": "Parameter",
+			"Name": "EyeBlink",
+			"Ids": [
+				"ParamEyeLOpen",
+				"ParamEyeROpen"
+			]
+		},
+		{
+			"Target": "Parameter",
+			"Name": "LipSync",
+			"Ids": [
+				"ParamMouthOpenY"
+			]
+		}
+	]
+}
