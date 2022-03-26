@@ -1,0 +1,23 @@
+{
+	"Version": 3,
+	"FileReferences": {
+		"Moc": "草片ウユウ.moc3",
+		"Textures": [
+			"草片ウユウ.4096/texture_00.png"
+		],
+		"Physics": "草片ウユウ.physics3.json",
+		"DisplayInfo": "草片ウユウ.cdi3.json"
+	},
+	"Groups": [
+		{
+			"Target": "Parameter",
+			"Name": "EyeBlink",
+			"Ids": []
+		},
+		{
+			"Target": "Parameter",
+			"Name": "LipSync",
+			"Ids": []
+		}
+	]
+}
